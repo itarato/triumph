@@ -3,7 +3,7 @@
   var init = function () {
     var $board = $('#board');
     for (var y = 0; y < config.size_y; y++) {
-      var $row = $('<div class="row"></div>');
+      var $row = $('<div class="row"/>');
       $board.append($row);
 
       for (var x = 0; x < config.size_x; x++) {
@@ -29,7 +29,7 @@
 
       checkTriples($this.data('x'), $this.data('y'));
     });
-  }
+  };
 
   var tiles = [];
   var setTile = function (x, y, tile) {
@@ -40,7 +40,7 @@
       return undefined;
     }
     return tiles[x + y * (config.size_x + config.size_y)];
-  }
+  };
 
   var setTileStatus = function ($tile, status) {
     $tile
@@ -98,6 +98,6 @@
   init();
 
 })({
-  size_x: 19,
-  size_y: 12
+  size_x: 8,
+  size_y: 11
 }, jQuery);

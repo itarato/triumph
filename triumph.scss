@@ -1,24 +1,30 @@
-$size: 50px;
+@import "compass/css3/box-shadow";
+
+$size: 40px;
+
+html, body {
+  margin: 0;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  color: rgba(255,255,255,0.1);
+  font-weight: 900;
+}
 
 .tile {
+  line-height: $size;
+  font-size: $size;
+
   width: $size;
   height: $size;
   background-color: lightgray;
-//  border: 1px solid grey;
   float: left;
   text-align: center;
 
-  color: transparent;
+//  @include box-shadow(rgba(0,0,0,0.5) 0 0 12px inset);
 
-  &.status-1 { background-color: #DDEEFF; }
-  &.status-2 { background-color: #CCDDEE; }
-  &.status-3 { background-color: #BBCCDD; }
-  &.status-4 { background-color: #AABBCC; }
-  &.status-5 { background-color: #99AABB; }
-  &.status-6 { background-color: #8899AA; }
-  &.status-7 { background-color: #778899; }
-  &.status-8 { background-color: #667788; }
-  &.status-9 { background-color: #556677; }
+  @for $i from 1 through 6 {
+    &.status-#{$i} { background-color: darken(#9be, 14 * $i); }
+  }
 }
 
 .row {
