@@ -2,6 +2,11 @@
 
 $size: 40px;
 
+html {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
 html, body {
   margin: 0;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;

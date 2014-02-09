@@ -1,4 +1,10 @@
 /* line 5, triumph.scss */
+html {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+/* line 10, triumph.scss */
 html, body {
   margin: 0;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -7,7 +13,7 @@ html, body {
   font-weight: 900;
 }
 
-/* line 13, triumph.scss */
+/* line 18, triumph.scss */
 .tile {
   line-height: 40px;
   font-size: 40px;
@@ -17,32 +23,32 @@ html, body {
   float: left;
   text-align: center;
 }
-/* line 26, triumph.scss */
+/* line 31, triumph.scss */
 .tile.status-1 {
   background-color: #5c92e4;
 }
-/* line 26, triumph.scss */
+/* line 31, triumph.scss */
 .tile.status-2 {
   background-color: #236ad5;
 }
-/* line 26, triumph.scss */
+/* line 31, triumph.scss */
 .tile.status-3 {
   background-color: #194c98;
 }
-/* line 26, triumph.scss */
+/* line 31, triumph.scss */
 .tile.status-4 {
   background-color: #0f2d5a;
 }
-/* line 26, triumph.scss */
+/* line 31, triumph.scss */
 .tile.status-5 {
   background-color: #050f1d;
 }
-/* line 26, triumph.scss */
+/* line 31, triumph.scss */
 .tile.status-6 {
   background-color: black;
 }
 
-/* line 30, triumph.scss */
+/* line 35, triumph.scss */
 .row {
   clear: both;
 }

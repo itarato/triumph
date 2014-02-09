@@ -101,3 +101,7 @@
   size_x: 8,
   size_y: 11
 }, jQuery);
+
+$(function() {
+  FastClick.attach(document.body);
+});
