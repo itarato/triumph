@@ -1,0 +1,12 @@
+{
+  "name": "Triumph",
+  "version": "1.0.0",
+  "main": "./",
+  "ignore": [],
+  "dependencies": {
+    "<name>": "<version>",
+    "<name>": "<folder>",
+    "<name>": "<package>"
+  },
+  "devDependencies": {}
+}
